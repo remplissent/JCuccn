@@ -10,21 +10,23 @@
 <script src="../layui/layui.js"></script>
 <div class="layui-row">
   <div class="layui-col-md3">
-    <div class="grid-demo" style="height: 60px">
+    <div class="grid-demo layui-bg-green" style="height: 60px">
       <a href="../html/home.html">
         <img src="../img/logo_white.png" alt="logo" class="log">
       </a>
     </div>
   </div>
   <div class="layui-col-md9">
-    <div class="grid-demo">
-      <ul class="layui-nav" lay-filter="">
+    <div class="grid-demo layui-bg-green">
+      <ul class="layui-nav layui-bg-green" lay-filter="">
         <li class="layui-nav-item"><a href="">首页</a></li>
         <li class="layui-nav-item"><a href="javascript:;">产品中心</a>
           <dl class="layui-nav-child"> <!-- 二级菜单 -->
+            <dd style="color: red">硬件产品</dd>
             <dd><a href="">火灾报警监控系统</a></dd>
             <dd><a href="">消防水源监测系统</a></dd>
             <dd><a href="">电气火灾监控系统</a></dd>
+            <dd style="color: red">软件平台</dd>
             <dd><a href="">消防视频监控系统</a></dd>
             <dd><a href="">设施巡查管理系统</a></dd>
             <dd><a href="">消防电源监测系统</a></dd>
@@ -45,6 +47,7 @@
     </div>
   </div>
 </div>
+
 <div class="layui-carousel" id="test1">
   <div carousel-item>
     <div><img src="../img/ad_1.jpg"></div>
@@ -83,15 +86,12 @@
   </div>
 </div>
 
-<div style="height: 50px"></div>
-<div class="layui-footer footer footer-index" style="text-align: center;line-height: 20px">
-  <div class="layui-main">
-    <p>&copy; 2018 <a href="/">hncfs119.com</a> MIT license</p>
-    <p>
-      <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">备案号xxxxxxxx号-x</a>
-    </p>
-  </div>
+<div style="height: 60px"></div>
+<div class="grid-demo layui-bg-green layui-footer" style="height: 80px">
+    <p>&copy; 2018 <a href="../html/home.html" style="color: white">hncfs119.com</a> MIT license</p>
+    <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow" style="color: white">备案号xxxxxxxx号-x</a>
 </div>
+
 
 <script>
   layui.use('element', function(){
@@ -109,7 +109,7 @@
     carousel.render({
       elem: '#test1'
       ,width: '100%' //设置容器宽度
-      ,height: '680px'
+      ,height: '600px'
       ,arrow: 'always' //始终显示箭头
       //,anim: 'updown' //切换动画方式
     });
